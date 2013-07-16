@@ -11,5 +11,10 @@ Note: this code cannot run on its own. It depends on
 
 To get started, please study mcode/cca_example_1.m
 
-This file loads a pre-recorded speech datum stored in Audapter's standard .mat format.
+This script loads a pre-recorded speech datum stored in Audapter's standard .mat format. The scripts loads two ASCII files into Audapter. The first file (e.g., "ost_1") sets the parameters for online setence tracking. The second file (e.g., "f1_up_f2_down.pcf") sets the perturbation parameter.
+
+Note: the parameters in the ost_1 file are currently handcrafted. For real experiments, some heuristics need to be designed in order to automatize the online sentence tracking parameter selection. 
+
+The pdf files "ostParams.pdf" and "PertCfgFileFormat.pdf" contain some brief description of the format of the two configraution files. The scripts generates a figure with two panels. The upper panel shows the input signal and the bottom panel shows the output. The script also plays the input and output sounds.
+
 
